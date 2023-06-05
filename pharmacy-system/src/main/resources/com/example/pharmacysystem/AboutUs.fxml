@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AboutUs">
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="280.0" style="-fx-background-color: #2aa6f0;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="158.0" fitWidth="169.0" layoutX="61.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/Logo2-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <VBox layoutY="161.0" prefHeight="438.0" prefWidth="280.0">
+               <children>
+                  <Pane prefHeight="108.0" prefWidth="280.0">
+                     <children>
+                        <Button fx:id="HomeBtn" layoutX="22.0" layoutY="11.0" mnemonicParsing="false" onAction="#HomeBtnClicked" prefHeight="65.0" prefWidth="236.0" style="-fx-background-color: #fbd454;" text="Home">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="108.0" prefWidth="280.0">
+                     <children>
+                        <Button fx:id="ShopBtn" layoutX="22.0" layoutY="12.0" mnemonicParsing="false" onAction="#ShopBtnClicked" prefHeight="64.0" prefWidth="236.0" style="-fx-background-color: #fbd454;" text="Shop">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="108.0" prefWidth="280.0">
+                     <children>
+                        <Button fx:id="CartBtn" layoutX="22.0" layoutY="11.0" mnemonicParsing="false" onAction="#CartBtnClicked" prefHeight="65.0" prefWidth="236.0" style="-fx-background-color: #fbd454;" text="Cart">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="108.0" prefWidth="280.0">
+                     <children>
+                        <Button fx:id="TrackOrderBtn" layoutX="22.0" layoutY="13.0" mnemonicParsing="false" onAction="#TrackOrderBtnClicked" prefHeight="63.0" prefWidth="236.0" style="-fx-background-color: #fbd454;" text="Track Order">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="108.0" prefWidth="280.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="520.0" style="-fx-background-color: #F5F5FF;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="242.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/info.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="242.0" layoutY="64.0" text="About Us" />
+            <TextArea editable="false" layoutX="29.0" layoutY="85.0" prefHeight="505.0" prefWidth="476.0" style="-fx-background-color: #F5F5FF;" text="Wellness Express is one of the oldest pharmacies in Egypt.&#10;&#10;In 1929, Wellness Express owner established its first branch in Cairo &#10;and since then it has the leadership in the pharmaceutical services &#10;exemplified in preparing drug formulations at the highest level of&#10;accuracy and providing all medical products to the customers as&#10;soon as possible with the best treatment.&#10;&#10;The march of success and leadership continued for over fifty years&#10;in the beginning of this century, we opened a series of new branches&#10;of the pharmacy to cover every neighborhood in Alexandria with the &#10;continuation of updating and improving the pharmacy services to &#10;keep pace with the latest standards of the twenty-first century.&#10;&#10;Success will continue, God willing." />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
